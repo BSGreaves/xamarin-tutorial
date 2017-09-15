@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Udemy1.MarkupExtensions"
+    x:Class="Udemy1.ImagePage">
+    <!-- for dynamic URI image with activity indicator-->
+    <!--<AbsoluteLayout>
+        <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading }"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5 100, 100" 
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Image x:Name="image" Aspect="AspectFill"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>-->
+<!--        In absolute layout, you have to set the actual size of images.
+-->    
+    <!-- for embedded background image with codebehind-->
+    <Image x:Name="image" Aspect="AspectFill" />
+
+    <!-- for embedded background image with custom markup extension-->
+    <Image Source="{local:EmbeddedImage ResourceID=Udemy1.Images.wizard.jpg}" x:Name="image" Aspect="AspectFill" />
+    
+</ContentPage>

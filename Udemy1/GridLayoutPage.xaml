@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    Padding="0, 20, 0, 0"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Udemy1.GridLayoutPage">
+    <Grid
+        RowSpacing="40"
+        ColumnSpacing="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="Label1" BackgroundColor="Blue" />
+        <Label Grid.Row="0" Grid.Column="1" Text="Label2" BackgroundColor="Green" />
+        <Label Grid.Row="1" Grid.Column="0" Text="Label3" BackgroundColor="Red" />
+        <Label Grid.Row="1" Grid.Column="1" Text="Label3" BackgroundColor="Yellow" />
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="ColumnSpan" BackgroundColor="Silver" />
+        <Label Grid.Column="2" Grid.RowSpan="3" Text="RowSpan" BackgroundColor="Black" />
+    </Grid>
+</ContentPage>
+ 

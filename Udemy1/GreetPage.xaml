@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Udemy1.GreetPage">
+    <!-- You can add things like this to ContentPage for all platforms Padding="0, 20, 0, 0"-->
+    <ContentPage.Padding>
+        <!-- Got a build warning, might be deprecated
+        <OnPlatform x:TypeArgument="Thickness" iOS="0, 20, 0, 0">
+            You can add platform specific code here. c:TypeArgument="..." lets you set the type
+        </OnPlatform>
+        -->
+    </ContentPage.Padding>
+
+    <StackLayout HorizontalOptions="Center" BindingContext="{x:Reference slider}">
+        <!-- In the Data binding below, the first arg is the source, the second arg is the PROPERTY to be bound to. PATH is so that you can use dot notation if you want. -->
+        <BoxView Color="Blue" Opacity="{Binding Value}" />
+        <Label
+            Text="{Binding Value,
+                StringFormat='Value is {0:F2}' }"
+            Opacity="{Binding Value}"
+            x:Name="sliderLabel" />
+        <Slider x:Name="slider"/>
+        <!--  This was for the event handler:   ValueChanged="Handle_ValueChanged" and this in the label: x:Name="sliderLabel"-->    
+    </StackLayout>
+</ContentPage>
+ 
