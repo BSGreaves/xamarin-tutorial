@@ -52,6 +52,48 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\wizard.jpg" />
+    <EmbeddedResource Include="IconImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewWithContext.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeirarchicalNavigation.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroductionHeirPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetailChild.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabbyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolbarItems.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extensions\DateCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactMethodsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppPropertiesStorage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -83,6 +125,49 @@
       <DependentUpon>ImagePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MarkupExtensions\EmbeddedImage.cs" />
+    <Compile Include="IconImagePage.xaml.cs">
+      <DependentUpon>IconImagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewPage.xaml.cs">
+      <DependentUpon>ListViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="ListViewWithContext.xaml.cs">
+      <DependentUpon>ListViewWithContext.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HeirarchicalNavigation.xaml.cs">
+      <DependentUpon>HeirarchicalNavigation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IntroductionHeirPage.xaml.cs">
+      <DependentUpon>IntroductionHeirPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetail.xaml.cs">
+      <DependentUpon>MasterDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetailChild.xaml.cs">
+      <DependentUpon>MasterDetailChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabbyPage.xaml.cs">
+      <DependentUpon>TabbyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarItems.xaml.cs">
+      <DependentUpon>ToolbarItems.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntryPage.xaml.cs">
+      <DependentUpon>EntryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TablePage.xaml.cs">
+      <DependentUpon>TablePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\DateCell.xaml.cs">
+      <DependentUpon>DateCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactMethodsPage.xaml.cs">
+      <DependentUpon>ContactMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppPropertiesStorage.xaml.cs">
+      <DependentUpon>AppPropertiesStorage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -103,11 +188,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Images\icons8-Camera-50.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="MarkupExtensions\" />
+    <Folder Include="Models\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

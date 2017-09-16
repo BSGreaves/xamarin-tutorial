@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+    xmlns:local="clr-namespace:Udemy1"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Udemy1.TabbyPage">
+	<local:StackLayoutPage Title="Page3" Icon="icons8-Home-50.png" />
+    <ContentPage Title="Page1" Icon="icons8-Home-50.png">
+        <Label Text="Content of Page 1" HorizontalOptions="Center" VerticalOptions="Center" />
+    </ContentPage>
+    <ContentPage Title="Page2" Icon="icons8-Home-50.png">
+        <Label Text="Content of Page 2" HorizontalOptions="Center" VerticalOptions="Center" />
+    </ContentPage>
+</TabbedPage>
+
+<!-- How to add a content page to a navigation page-->
+<!--<NavigationPage>
+    <x:Arguments>
+        <ContentPage>
+           etc.
+        </ContentPage>
+        or
+        <local:contentpage etc.>
+    </x:Arguments>
+</NavigationPage>-->
+
