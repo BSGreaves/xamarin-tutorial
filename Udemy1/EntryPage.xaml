@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Padding="40" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Udemy1.EntryPage">
+	<StackLayout>
+        <!--<Entry Keyboard="Telephone" Placeholder="Phone" />
+        <Entry IsPassword="True" Completed="Handle_Completed" />
+        <Label x:Name="label" />
+        <Entry IsPassword="True" TextChanged="Handle_TextChanged" />
+        <Label x:Name="label2" />
+        <Entry Keyboard="Telephone" Placeholder="Phone" />-->
+        
+        <!--<Editor BackgroundColor="Gray"/>-->
+        <!--Allocate unused space with VerticalOptions="FillAndExpand"-->
+
+<!--        Hardcoded picker
+-->        <!--<Picker x:Name="contactMethods" Title="Contact Method" SelectedIndexChanged="Handle_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>SMS</x:String>
+                <x:String>Email</x:String>
+            </Picker.Items>
+        </Picker>-->
+
+        <Picker x:Name="picker" Title="Contact Method" SelectedIndexChanged="Handle_SelectedIndexChanged">
+            <Picker.Items>
+            </Picker.Items>
+        </Picker>
+
+    </StackLayout>
+</ContentPage>
+ 

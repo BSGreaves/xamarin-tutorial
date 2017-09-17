@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    Padding="0, 20, 0, 0"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Udemy1.ListViewPage">
+    <StackLayout>
+        <SearchBar Placeholder="Search"  TextChanged="Handle_TextChanged" />
+        <ListView x:Name="listView" HasUnevenRows="True"
+            ItemTapped="Handle_ItemTapped"
+            ItemSelected="Handle_ItemSelected">
+            <ListView.ItemTemplate> 
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Status}"/>                
+                <!--<ImageCell ImageSource="{Binding ImageURL}" Text="{Binding Name}" Detail="{Binding Status}" /> -->
+                    <!--<ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Image Source="{Binding ImageURL}" />
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Name}" />
+                                <Label Text="{Binding Status}" TextColor="Gray" />
+                            </StackLayout>
+                            <Button Text="Follow" />
+                        </StackLayout> 
+                    </ViewCell>-->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <!-- Add SeperatorVisibility="None" to get rid of the lines between -->
+        <!-- Add SeperatorColor="Blue" to change color -->
+    </StackLayout>
+    
+
+</ContentPage>

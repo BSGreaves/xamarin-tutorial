@@ -18,6 +18,7 @@
     <Image x:Name="image" Aspect="AspectFill" />
 
     <!-- for embedded background image with custom markup extension-->
-    <Image Source="{local:EmbeddedImage ResourceID=Udemy1.Images.wizard.jpg}" x:Name="image" Aspect="AspectFill" />
+    <Image Source="{local:EmbeddedImage ResourceID=Udemy1.Images.wizard.jpg}" x:Name="image2" Aspect="AspectFill" />
     
 </ContentPage>
+ 
