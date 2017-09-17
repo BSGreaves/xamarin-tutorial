@@ -12,7 +12,7 @@ namespace Udemy1
         {
             var app = Application.Current as App;
             app.Title = title.Text;
-			app.NotificationsEnabled = notificationsEnabled.On;
+			app.NotificationsEnabled  = notificationsEnabled.On;
             // This saves immediately. Useful for saving blocks of text that might get lost on sleep
             // Application.Current.SavePropertiesAsync();
 		}
@@ -21,17 +21,10 @@ namespace Udemy1
         {
             InitializeComponent();
 
-            if (Application.Current.Properties.ContainsKey(TitleKey))
-            {
-                title.Text = Application.Current.Properties[TitleKey].ToString();
-            }
-			if (Application.Current.Properties.ContainsKey(NotificationsEnabledKey))
-			{
-                notificationsEnabled.On = (bool)Application.Current.Properties[NotificationsEnabledKey];
-			}
+			var app = Application.Current as App;
 
-
-
+            title.Text = app.Title;
+            notificationsEnabled.On = app.NotificationsEnabled;
 		}
     }
 }
